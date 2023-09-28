@@ -5,7 +5,7 @@ require 'uri'
 require 'json'
 
 if ARGV.empty? || ARGV.length != 4
-  puts "Usage: ruby get-wikiart.rb <file> <output> <limit> <from>"
+  puts "Usage: #{$0} <file> <output> <limit> <from>"
   exit
 end
 
