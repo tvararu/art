@@ -72,9 +72,10 @@
         const img = document.createElement("img");
         const id = imageId(artwork.image);
         const largeSrc = `/images/${id}`;
+        const thumbSrc = `/thumbs/${id}`;
 
         img.className = "artwork";
-        img.src = largeSrc;
+        img.src = thumbSrc;
         img.alt = `The painting "${artwork.title}" by ${artwork.artistName}`;
         if (artwork.year !== "?") img.alt += ", " + artwork.year;
         img.loading = "lazy";
