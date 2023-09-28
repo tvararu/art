@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>art.vararu.org</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      figure,
+      .artwork {
+        max-width: 100%;
+      }
+
+      figure {
+        break-inside: avoid-column;
+        margin-top: 0;
+      }
+
+      main {
+        columns: 3;
+        margin: 0 auto;
+        max-width: 1200px;
+      }
+
+      @media (max-width: 900px) {
+        main {
+          columns: 2;
+        }
+      }
+
+      @media (max-width: 600px) {
+        main {
+          columns: 1;
+        }
+      }
+    </style>
+  </head>
+  <body class="no-js">
+    <header>
+      <h1>art theo likes</h1>
+    </header>
+
+    <noscript>
+      <p>
+        If you're seeing this, the page's JavaScript failed to execute. This
+        page is built in a really lazy way and while it could be made to work
+        without JavaScript, I haven't bothered yet.
+      </p>
+    </noscript>
+
+    <main></main>
+
+    <script>
+      const fetchArt = async () => {
+        const response = await fetch("/data/wikiart.json");
+        return await response.json();
+      };
+
+      const imageId = (url) =>
+        url.replace(/https:\/\/uploads\d\.wikiart\.org\/.*images\//, "");
+
+      const imageFrom = (artwork) => {
+        const img = document.createElement("img");
+        const id = imageId(artwork.image);
+        img.className = "artwork";
+        img.src = `/images/${id}`;
+        img.alt = `The painting "${artwork.title}" by ${artwork.artistName}`;
+        if (artwork.year !== "?") img.alt += ", " + artwork.year;
+        img.loading = "lazy";
+
+        return img;
+      };
+
+      const captionFrom = (artwork) => {
+        const caption = document.createElement("figcaption");
+        caption.innerHTML = `<p><em>${artwork.title}</em> by ${
+          artwork.artistName
+        }${artwork.year !== "?" ? ", " + artwork.year : ""}</p>`;
+
+        return caption;
+      };
+
+      const figureFrom = (artwork) => {
+        const figure = document.createElement("figure");
+
+        const img = imageFrom(artwork);
+        figure.appendChild(img);
+
+        const caption = captionFrom(artwork);
+        figure.appendChild(caption);
+
+        return figure;
+      };
+
+      async function main() {
+        const artworks = await fetchArt();
+        artworks.reverse();
+        const main = document.querySelector("main");
+
+        artworks.map(figureFrom).forEach((figure) => {
+          main.appendChild(figure);
+        });
+
+        main.appendChild(figure);
+      }
+
+      main();
+    </script>
+  </body>
+</html>
