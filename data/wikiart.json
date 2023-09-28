@@ -138,12 +138,6 @@
     "image": "https://uploads1.wikiart.org/images/efim-volkov/first-snow.jpg"
   },
   {
-    "title": "The Little Bay, Port Vendres",
-    "year": "1927",
-    "artistName": "Charles Rennie Mackintosh",
-    "image": "https://uploads1.wikiart.org/images/charles-rennie-mackintosh/the-little-bay-port-vendres-1927.jpg"
-  },
-  {
     "title": "The Long Sleep",
     "year": "1868",
     "artistName": "Briton Riviere",
@@ -162,12 +156,6 @@
     "image": "https://uploads3.wikiart.org/images/sandro-botticelli/portrait-of-simonetta-vespucci(1).jpg"
   },
   {
-    "title": "Machinery",
-    "year": "1920",
-    "artistName": "Charles Demuth",
-    "image": "https://uploads8.wikiart.org/images/charles-demuth/machinery-1920.jpg"
-  },
-  {
     "title": "Soap factory of Bagnolet",
     "year": "1897",
     "artistName": "Alphonse Mucha",
@@ -178,12 +166,6 @@
     "year": "1880-1882",
     "artistName": "James Tissot",
     "image": "https://uploads5.wikiart.org/images/james-tissot/hide-and-seek.jpg"
-  },
-  {
-    "title": "Earth",
-    "year": "1570",
-    "artistName": "Giuseppe Arcimboldo",
-    "image": "https://uploads3.wikiart.org/images/giuseppe-arcimboldo/earth-1570(1).jpg"
   },
   {
     "title": "Red hat",
@@ -222,12 +204,6 @@
     "image": "https://uploads2.wikiart.org/images/boris-kustodiev/palm-market-with-spassky-gate-1917.jpg"
   },
   {
-    "title": "Christ and Sinner",
-    "year": "1873",
-    "artistName": "Henryk Siemiradzki",
-    "image": "https://uploads6.wikiart.org/images/henryk-siemiradzki/christ-and-sinner.jpg"
-  },
-  {
     "title": "Picking Blossoms",
     "year": "?",
     "artistName": "Emile Claus",
@@ -258,18 +234,6 @@
     "image": "https://uploads6.wikiart.org/images/ivan-shishkin/in-the-wild-north-1891.jpg"
   },
   {
-    "title": "Lake Suwa in the Shinano province",
-    "year": "1829-1833",
-    "artistName": "Katsushika Hokusai",
-    "image": "https://uploads4.wikiart.org/images/katsushika-hokusai/lake-suwa-in-the-shinano-province.jpg"
-  },
-  {
-    "title": "Chimney and Water Tower",
-    "year": "1931",
-    "artistName": "Charles Demuth",
-    "image": "https://uploads4.wikiart.org/images/charles-demuth/chimney-and-water-tower-1931.jpg"
-  },
-  {
     "title": "Ulysses and the Sirens",
     "year": "1891",
     "artistName": "John William Waterhouse",
@@ -298,12 +262,6 @@
     "year": "1870",
     "artistName": "Fyodor Vasilyev",
     "image": "https://uploads7.wikiart.org/images/fyodor-vasilyev/volga-lagoon.jpg"
-  },
-  {
-    "title": "The Flirtation",
-    "year": "1904",
-    "artistName": "Eugene de Blaas",
-    "image": "https://uploads2.wikiart.org/images/eugene-de-blaas/the-flirtation-1.jpg"
   },
   {
     "title": "Embarkation of Ulysses",
@@ -720,12 +678,6 @@
     "image": "https://uploads4.wikiart.org/images/james-tissot/behold-he-standeth-behind-our-wall-1894.jpg"
   },
   {
-    "title": "Malkeplads ved Dyrehavegård",
-    "year": "1901",
-    "artistName": "Theodor Philipsen",
-    "image": "https://uploads2.wikiart.org/images/theodor-philipsen/malkeplads-ved-dyrehaveg-rd-1901.jpg"
-  },
-  {
     "title": "The Green Dancer",
     "year": "1879",
     "artistName": "Edgar Degas",
@@ -1002,4 +954,3 @@
     "image": "https://uploads6.wikiart.org/images/vincent-van-gogh/the-factory-at-asnieres-1887.jpg"
   }
 ]
-
