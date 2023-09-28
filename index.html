@@ -68,16 +68,23 @@
       const imageId = (url) =>
         url.replace(/https:\/\/uploads\d\.wikiart\.org\/.*images\//, "");
 
-      const imageFrom = (artwork) => {
+      const imageLinkFrom = (artwork) => {
         const img = document.createElement("img");
         const id = imageId(artwork.image);
+        const largeSrc = `/images/${id}`;
+
         img.className = "artwork";
-        img.src = `/images/${id}`;
+        img.src = largeSrc;
         img.alt = `The painting "${artwork.title}" by ${artwork.artistName}`;
         if (artwork.year !== "?") img.alt += ", " + artwork.year;
         img.loading = "lazy";
 
-        return img;
+        const a = document.createElement("a");
+        a.href = largeSrc;
+
+        a.appendChild(img);
+
+        return a;
       };
 
       const captionFrom = (artwork) => {
@@ -92,7 +99,7 @@
       const figureFrom = (artwork) => {
         const figure = document.createElement("figure");
 
-        const img = imageFrom(artwork);
+        const img = imageLinkFrom(artwork);
         figure.appendChild(img);
 
         const caption = captionFrom(artwork);
